@@ -1,0 +1,167 @@
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#00ff08;
+color:rgb(10, 151, 216);
+transition:0.3s;
+}
+
+.light-mode{
+background:rgb(133, 133, 133);
+color:rgb(255, 0, 25);
+}
+
+header{
+background:#032c85;
+text-align:center;
+padding:20px;
+}
+
+nav{
+margin:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+background:#2563eb;
+padding:10px 15px;
+border-radius:5px;
+display:inline-block;
+}
+
+button{
+background:#22c55e;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+main{
+text-align:center;
+padding:40px;
+}
+
+.images{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+img{
+width:300px;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+display:block;
+}
+
+footer{
+background:#111827;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:600px){
+
+nav a{
+display:block;
+margin:10px auto;
+width:150px;
+}
+
+.images{
+flex-direction:column;
+align-items:center;
+}
+
+img{
+width:90%;
+height:auto;
+}
+
+}
+main{
+display:flex;
+flex-direction:column;
+gap:15px;
+padding:20px;
+}
+
+main div{
+border:1px solid black;
+padding:15px;
+border-radius:10px;
+background:white;
+transition:0.2s;
+}
+
+main div:hover{
+transform:scale(1.02);
+}
+
+button{
+margin-top:10px;
+padding:8px 15px;
+cursor:pointer;
+border:none;
+border-radius:6px;
+background:#007bff;
+color:white;
+}
+
+.dark-mode main div{
+background:#222;
+border-color:white;
+}
+body{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin:0;
+  background:#222;
+  font-family:sans-serif;
+}
+
+main#snake-container{
+  border:2px solid #007bff;
+  border-radius:10px;
+  padding:20px;
+  background:#111;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+canvas#snake-game{
+  background:#000;
+  border:2px solid #007bff;
+  border-radius:5px;
+}
+
+#game-ui{
+  margin-top:15px;
+  display:flex;
+  gap:15px;
+  align-items:center;
+  color:white;
+}
+
+#restart-btn{
+  padding:5px 10px;
+  border:none;
+  border-radius:5px;
+  background:#007bff;
+  color:white;
+  cursor:pointer;
+}
