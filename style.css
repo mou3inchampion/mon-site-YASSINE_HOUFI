@@ -1,15 +1,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #00ff08;
-  color: rgb(10,151,216);
+  background: #111;
+  color: #fff;
   transition: all 0.3s ease;
   line-height: 1.6;
 }
 
-.light-mode {
-  background: #888;
-  color: #ff0019;
+body.light-mode {
+  background: #ffffff;
+  color: #111;
 }
 
 header {
@@ -45,6 +45,12 @@ button {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
 }
 
 main {
@@ -53,13 +59,18 @@ main {
 }
 
 main div {
-  border: 1px solid #000;
+  border: 1px solid #444;
   padding: 25px;
   border-radius: 12px;
-  background: #fff;
+  background: #1a1a1a;
   margin: 20px auto;
   max-width: 600px;
   transition: 0.2s;
+}
+
+body.light-mode main div {
+  background: #f2f2f2;
+  border-color: #ccc;
 }
 
 main div:hover {
@@ -89,14 +100,11 @@ footer {
   margin-top: 50px;
 }
 
-.dark-mode main div {
-  background: #222;
-  border-color: #fff;
-}
-
-input, textarea {
+input,
+textarea {
   border-radius: 8px;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
+  padding: 10px;
   font-family: Arial, sans-serif;
 }
 
@@ -107,24 +115,6 @@ input, textarea {
   gap: 20px;
 }
 
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    width: 85%;
-    margin: 10px auto;
-  }
-
-  .images {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  img {
-    width: 90%;
-    height: auto;
-  }
-
-  main {
-    padding: 30px 15px;
-  }
+canvas {
+  border-radius: 10px;
 }
