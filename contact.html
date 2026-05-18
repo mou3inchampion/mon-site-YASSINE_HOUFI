@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Site de Yassine Houfi</title>
+<title>Snake</title>
 
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
+<script src="snake.js" defer></script>
 </head>
 
 <body>
@@ -15,20 +16,29 @@
 <h1>Site de Yassine Houfi</h1>
 
 <nav>
-<a href="index.html">Accueil</a>
-<a href="galerie.html">choses utiles</a>
-<a href="contact.html">snake</a>
+<a href="index.html">Page principale</a>
+<a href="accueil.html">Accueil</a>
+<a href="galerie.html">Choses utiles</a>
+<a href="contact.html">Snake</a>
 </nav>
 
 <button onclick="changerMode()">🌙/☀️</button>
 </header>
 
 <main id="snake-container">
-  <canvas id="snake-game" width="400" height="400"></canvas>
-  <div id="game-ui">
-    <span id="score">Score: 0</span>
-    <button id="restart-btn">Restart</button>
-  </div>
+
+<canvas id="snake-game" width="400" height="400"></canvas>
+
+<div id="game-ui">
+<span id="score">Score: 0</span>
+<button id="restart-btn">Restart</button>
+</div>
+
 </main>
 
-<script src="snake.js"></script>
+<footer>
+<p>Projet NSI - Yassine Houfi</p>
+</footer>
+
+</body>
+</html>
