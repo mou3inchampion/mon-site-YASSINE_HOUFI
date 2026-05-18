@@ -56,6 +56,8 @@ button:hover {
 main {
   text-align: center;
   padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 main div {
@@ -87,10 +89,9 @@ main div:hover {
 }
 
 img {
-  width: 320px;
-  height: 220px;
-  object-fit: cover;
   border-radius: 12px;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
@@ -118,6 +119,7 @@ textarea {
 canvas {
   border-radius: 10px;
 }
+
 .profile {
   display: flex;
   align-items: center;
@@ -131,4 +133,12 @@ canvas {
   width: 300px;
   border-radius: 12px;
   object-fit: cover;
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
 }
