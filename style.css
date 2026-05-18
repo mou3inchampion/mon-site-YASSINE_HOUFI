@@ -118,3 +118,17 @@ textarea {
 canvas {
   border-radius: 10px;
 }
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.profile img {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
